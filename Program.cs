@@ -9,3 +9,4 @@ System.Console.Write("Ismingizni kiriting : ");
 string name = System.Console.ReadLine();
 string greeting = $"Salom, {name}, Kescha dasturiga xush kelibsiz!";
 System.Console.WriteLine(greeting);
+// Umarali
