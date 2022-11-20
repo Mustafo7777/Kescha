@@ -4,15 +4,20 @@ string greeting = $"Salom, {name}";
 System.Console.WriteLine(greeting);
 
 System.Console.Write("Ali yoshini kiriting : ");
-string ageAsString = System.Console.ReadLine();
-int age =Convert.ToInt32(ageAsString);
+string alisAgeAsString = System.Console.ReadLine();
+int alisAge =Convert.ToInt32(alisAgeAsString);
 System.Console.Write("Valini yoshini kiriting : ");
-string keschasAgeAsString =  System.Console.ReadLine();
-int keschasAge = Convert.ToInt32(keschasAgeAsString);
-
-System.Console.WriteLine($"Ali katta Validan {age> keschasAge}");
-System.Console.WriteLine($"Ali kichkina Validan {age< keschasAge}");
-System.Console.WriteLine($"Ali katta yoki teng Validan {age>= keschasAge}");
-System.Console.WriteLine($"Ali kichkina Validan {age <= keschasAge}");
-System.Console.WriteLine($"Ali bilan Vali teng {age == keschasAge}");
-System.Console.WriteLine($"Ali bilan Vali teng emas {age != keschasAge}");
+string valisAgeAsString =  System.Console.ReadLine();
+int valisAge = Convert.ToInt32(valisAgeAsString);
+if(alisAge<valisAge)
+{
+  System.Console.WriteLine("Ali kichkina Validan");
+}
+else if(alisAge==valisAge)
+{
+  System.Console.WriteLine("Ali bilan Vali teng");
+}
+else 
+{
+    System.Console.WriteLine("Ali katta Validan");
+}
